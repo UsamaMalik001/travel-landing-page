@@ -29,26 +29,26 @@ const categories = [
 
 export default function CategorySection() {
   return (
-    <section className="relative py-20 px-[140px] bg-white overflow-hidden">
+    <section className="relative py-16 px-4 sm:px-8 lg:px-20 xl:px-32 bg-white overflow-hidden">
       <Image
         src="/category-icons/Group 4.png"
         alt="Decor"
         width={133}
         height={133}
-        className="absolute top-20 right-14"
+        className="absolute top-12 right-6 sm:right-14"
       />
 
       <SectionHeading
         subTitle="CATEGORY"
         title="We Offer Best Services"
-        className="mb-16"
+        className="mb-12 sm:mb-16 text-center"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {categories.map((category, cat) => (
           <div key={cat} className="relative z-10">
             {category.highlight && (
-              <div className="absolute -bottom-7 -left-7 w-[80px] h-[80px] bg-[#DF6951] rounded-br-[10px] rounded-tl-[30px] z-0"></div>
+              <div className="absolute -bottom-5 -left-5 w-16 h-16 bg-[#DF6951] rounded-br-[10px] rounded-tl-[30px] z-0"></div>
             )}
 
             <div
@@ -56,7 +56,7 @@ export default function CategorySection() {
                 category.highlight ? "shadow-lg" : ""
               }`}
             >
-              <div className="w-22 h-22 mx-auto mb-4 relative">
+              <div className="relative w-16 h-16 mx-auto mb-4">
                 <Image
                   src={category.icon}
                   alt={category.title}
@@ -65,10 +65,10 @@ export default function CategorySection() {
                 />
               </div>
 
-              <p className="text-[15px] text-[#1E1D4C] font-semibold">
+              <p className="text-base font-semibold text-[#1E1D4C]">
                 {category.title}
               </p>
-              <p className="mt-2 text-sm w-[181px] text-[#5E6282]">
+              <p className="mt-2 text-sm max-w-[220px] mx-auto text-[#5E6282]">
                 {category.description}
               </p>
             </div>

@@ -18,11 +18,11 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="relative py-20 px-[140px] bg-white overflow-hidden">
+    <section className="relative pt-20 pb-4 px-4 sm:px-8 lg:px-20 xl:px-32 bg-white overflow-hidden">
       <SectionHeading
         subTitle="Top Selling"
         title="Top Destinations"
-        className="mb-16"
+        className="mb-12 sm:mb-16 text-center"
       />
 
       <Image
@@ -30,19 +30,24 @@ export default function Destinations() {
         alt="Decor"
         width={80}
         height={143}
-        className="absolute top-[340px] right-[129px] z-0"
+        className="absolute bottom-[237px] -right-[200px] sm:right-[85px] z-0"
       />
 
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {destinations.map((destination) => (
-          <div key={destination.id} className="w-[1200px] justify-center">
-            <Image
-              src={destination.icon}
-              alt={`Destination ${destination.id}`}
-              width={420}
-              height={400}
-              className="object-cover -ml-16"
-            />
+          <div
+            key={destination.id}
+            className="overflow-hidden max-w-sm mx-auto"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src={destination.icon}
+                alt={`Destination ${destination.id}`}
+                width={420}
+                height={400}
+                className="object-cover"
+              />
+            </div>
           </div>
         ))}
       </div>

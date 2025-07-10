@@ -7,29 +7,26 @@ const steps = [
     title: "Choose Destination",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.",
-    bg: "bg-yellow-400",
   },
   {
     icon: "/booking-section/Group 12.png",
     title: "Make Payment",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.",
-    bg: "bg-orange-500",
   },
   {
     icon: "/booking-section/Group 11.png",
     title: "Reach Airport on Selected Date",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.",
-    bg: "bg-teal-600",
   },
 ];
 
 export default function TripStepsSection() {
   return (
-    <section className="relative -mt-18 pb-20 mb-10 px-[140px] bg-white overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center gap-1">
-        <div>
+    <section className="relative px-4 pb-10 sm:px-8 lg:px-20 xl:px-32 bg-white overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div className="w-full lg:w-1/2">
           <SectionHeading
             subTitle="Easy and Fast"
             title="Book Your Next Trip In 3 Easy Steps"
@@ -40,12 +37,13 @@ export default function TripStepsSection() {
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="flex items-start gap-5">
-                <div className={`w-16 h-16 flex items-center justify-center`}>
+                <div className="w-14 h-14 shrink-0 flex items-center justify-center">
                   <Image
                     src={step.icon}
                     alt={step.title}
                     width={47}
                     height={48}
+                    className="object-contain"
                   />
                 </div>
                 <div>
@@ -59,12 +57,12 @@ export default function TripStepsSection() {
           </div>
         </div>
 
-        <div className="relative w-full h-[490px] top-8 left-10 overflow-hidden">
+        <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-[500px] relative">
           <Image
             src="/booking-section/Image.png"
             alt="Trip To Greece"
             fill
-            className="object-cover"
+            className="object-cover rounded-xl"
           />
         </div>
       </div>
