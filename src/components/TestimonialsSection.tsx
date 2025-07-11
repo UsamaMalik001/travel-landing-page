@@ -14,13 +14,10 @@ export default function TestimonialsSection() {
               center={false}
             />
 
-            <div className="mt-8">
-              <Image
-                src="/testimonials-img/Group 61.png"
-                alt="Images"
-                width={120}
-                height={20}
-              />
+            <div className="mt-8 flex space-x-4">
+              <span className="w-4 h-4 rounded-full bg-[#2C3152]"></span>
+              <span className="w-4 h-4 rounded-full bg-[#E3E3E3]"></span>
+              <span className="w-4 h-4 rounded-full bg-[#E3E3E3]"></span>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
