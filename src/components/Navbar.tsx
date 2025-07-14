@@ -4,19 +4,20 @@ import Image from "next/image";
 import { ChevronDown, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import Container from "@/components/common/Container";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-10 w-full">
-      <div className="flex items-center justify-between px-4 sm:px-8 lg:px-20 xl:px-32 py-6">
+    <header className="z-50 w-full">
+      <Container className="flex items-center justify-between py-12">
         <Link className="flex items-center" href="/">
           <Image
             src="/logo/Logo.png"
             alt="Logo"
-            width={100}
-            height={40}
+            width={114}
+            height={33}
             className="object-contain"
           />
         </Link>
@@ -52,7 +53,7 @@ export default function Navbar() {
         >
           <Menu className="w-6 h-6" />
         </button>
-      </div>
+      </Container>
 
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col items-start gap-4 px-6 pb-6 text-sm font-medium text-gray-700">

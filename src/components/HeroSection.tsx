@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import Container from "@/components/common/Container";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 max-w-7xl px-4 sm:px-8 lg:px-20 xl:px-32 py-8 md:py-8 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 justify-items-center">
-      <div className="space-y-6">
+    <Container className="relative z-10">
+      <div className="space-y-6 w-full max-w-[630px]">
         <p className="text-[#DF6951] font-bold text-lg sm:text-xl uppercase">
           Best destinations around the world
         </p>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tighter text-[#181E4B] tracking-tighter relative z-auto">
+        <h1 className="text-[84px] leading-[89px] tracking-[-0.04em] font-bold leading-tighter text-[#181E4B] relative z-auto">
           Travel,{" "}
           <span className="relative inline-block z-10">
             <span className="relative z-20">enjoy</span>
@@ -24,7 +25,7 @@ export default function HeroSection() {
           <span>and full life</span>
         </h1>
 
-        <p className="text-[#5E6282] text-base sm:text-[16px] font-medium font-poppins max-w-[477px]">
+        <p className="text-[#5E6282] max-w-[477px] text-base sm:text-[16px] font-medium font-poppins">
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
@@ -44,21 +45,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
-        <Image src="/hero-section-imgs/Traveller 1.png" alt="Traveler" fill />
-
-        <img
-          src="/hero-section-imgs/plane.png"
-          alt="Plane"
-          className="absolute left-[20%] top-[9%] w-12 sm:w-16 md:w-24"
-        />
-
-        <img
-          src="/hero-section-imgs/plane.png"
-          alt="Plane"
-          className="absolute -right-[2%] top-[18%] w-12 sm:w-16 md:w-24"
-        />
+      <div className="absolute bottom-0 right-0  w-[765px] h-full">
+        <Image src="/hero-section-imgs/girl-hero-section.png" alt="Traveler" fill  objectFit="contain"/>
       </div>
-    </section>
+    </Container>
   );
 }
