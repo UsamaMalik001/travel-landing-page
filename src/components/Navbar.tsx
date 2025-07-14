@@ -21,7 +21,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden md:flex gap-6 lg:gap-8 items-center text-sm font-medium text-gray-700">
+        <nav className="hidden font-google md:flex gap-6 lg:gap-10 items-center text-[17px] font-medium text-[#212832]">
           <a href="#destinations" className="hover:text-black">
             Destinations
           </a>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <a href="#login" className="hover:text-black">
             Login
           </a>
-          <button className="border border-gray-700 rounded px-4 py-1 hover:bg-white cursor-pointer transition text-sm">
+          <button className="border border-[#212832] hover:text-black rounded-[5px] px-[22px] py-[9px] cursor-pointer text-[17px] font-medium text-[#212832]">
             Sign up
           </button>
           <div className="flex items-center gap-1 cursor-pointer hover:text-black">

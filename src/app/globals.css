@@ -3,6 +3,43 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/google-sans/ProductSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/google-sans/ProductSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/google-sans/ProductSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.shadow-yellow-glow {
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+}
+
+.shadow-coral-glow {
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+
+.shadow-depth {
+  box-shadow: 0px 1.85px 3.15px rgba(0, 0, 0, 0.0048),
+    0px 8.15px 6.52px rgba(0, 0, 0, 0.0079), 0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 38.52px 25.48px rgba(0, 0, 0, 0.0121),
+    0px 64.81px 46.85px rgba(0, 0, 0, 0.0152),
+    0px 100px 80px rgba(0, 0, 0, 0.02);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -10,6 +47,7 @@
   --font-volkhov: var(--font-volkhov);
   --font-sans: var(--font-poppins);
   --font-serif: var(--font-volkhov);
+  --font-open-sans: var(--font-open-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -51,6 +89,7 @@
   --foreground: oklch(0.145 0 0);
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
+  --font-google-sans: "Google Sans", sans-serif;
   --font-sans: var(--font-poppins);
   --font-serif: var(--font-volkhov);
   --card: oklch(1 0 0);

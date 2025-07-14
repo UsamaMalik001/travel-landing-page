@@ -12,11 +12,11 @@ export default function BrandsSection() {
   return (
     <section className="bg-white pb-32 px-4 sm:px-8 lg:px-20 xl:px-32">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-center sm:justify-between items-center gap-6 sm:gap-8">
+        <div className="flex flex-wrap justify-center sm:justify-between items-center gap-x-6 gap-y-8">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex justify-center items-center w-32 sm:w-36 h-14 sm:h-16 transition-all duration-300 ${
+              className={`flex justify-center items-center min-w-[100px] sm:w-36 h-14 sm:h-16 transition-all duration-300 ${
                 logo.isHighlighted ? "bg-white shadow-sm rounded-xl" : ""
               }`}
             >

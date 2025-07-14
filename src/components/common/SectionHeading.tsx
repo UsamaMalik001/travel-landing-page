@@ -17,8 +17,8 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div className={`mb-10 ${center ? "text-center" : ""} ${className}`}>
-      <p className="text-[16px] text-[#5E6282] font-semibold">{subTitle}</p>
-      <h1 className="text-3xl md:text-4xl font-bold text-[#14183E] mt-2">
+      <p className="text-[18px] text-[#5E6282] font-semibold">{subTitle}</p>
+      <h1 className="text-3xl md:text-[50px] font-bold text-[#14183E] mt-[8px]">
         {title}
       </h1>
       {children && <div className="mt-4">{children}</div>}

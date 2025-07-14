@@ -12,12 +12,16 @@ export default function Home() {
   return (
     <div>
       <div className="relative overflow-hidden">
-        <div className="absolute top-[-149px] left-[736px] w-[606.31px] h-[872.58px] -z-10">
+        <div className="absolute top-0 right-0 w-[552px] h-[520px] -z-10">
           <Image
             src="/hero-section-imgs/Decore.png"
             alt="Background Image"
             fill
           />
+        </div>
+
+        <div className="absolute top-0 left-0 w-[552px] h-[520px] -z-10">
+          <Image src="/hero-section-imgs/Ellipse 8.png" alt="Ellipse" fill />
         </div>
 
         <Navbar />
