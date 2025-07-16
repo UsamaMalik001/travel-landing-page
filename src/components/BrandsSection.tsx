@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Container from "./common/Container";
 
 const logos = [
   { src: "/brand-icon/image 27.png", alt: "Axon" },
@@ -10,7 +11,7 @@ const logos = [
 
 export default function BrandsSection() {
   return (
-    <section className="bg-white pb-32 px-4 sm:px-8 lg:px-20 xl:px-32">
+    <Container className="bg-white pb-32 max-w-[1273px]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap justify-center sm:justify-between items-center gap-x-6 gap-y-8">
           {logos.map((logo, index) => (
@@ -33,6 +34,6 @@ export default function BrandsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </Container>
   );
 }

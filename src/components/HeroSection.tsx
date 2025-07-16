@@ -5,7 +5,7 @@ import Container from "@/components/common/Container";
 
 export default function HeroSection() {
   return (
-    <Container className="relative z-10">
+    <Container className="relative z-10 w-full max-w-[1200px]">
       <div className="space-y-6 w-full max-w-[630px]">
         <p className="text-[#DF6951] font-bold text-lg sm:text-xl uppercase">
           Best destinations around the world
@@ -45,8 +45,13 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-0  w-[765px] h-full">
-        <Image src="/hero-section-imgs/girl-hero-section.png" alt="Traveler" fill  objectFit="contain"/>
+      <div className="absolute bottom-0 right-0 w-[765px] h-full">
+        <Image
+          src="/hero-section-imgs/girl-hero-section.png"
+          alt="Traveler"
+          fill
+          objectFit="contain"
+        />
       </div>
     </Container>
   );

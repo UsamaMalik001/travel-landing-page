@@ -1,8 +1,9 @@
 import { Mail } from "lucide-react";
+import Container from "./common/Container";
 
 export default function SubscribeSection() {
   return (
-    <section className="relative bg-[#f1eff8] px-4 sm:px-8 lg:px-20 xl:px-32 py-16 sm:py-20 mb-20 rounded-[20px] rounded-tl-[80px] sm:rounded-tl-[129px] max-w-6xl mx-auto shadow-sm overflow-hidden">
+    <Container className="relative max-w-[1200px] bg-[#f1eff8] py-16 sm:py-20 mb-20 rounded-[20px] rounded-tl-[80px] sm:rounded-tl-[129px] shadow-sm">
       <div className="text-center">
         <p className="text-lg sm:text-xl md:text-[23px] font-semibold text-[#5E6282] leading-relaxed sm:leading-[34px]">
           Subscribe to get information, latest news and other{" "}
@@ -13,7 +14,7 @@ export default function SubscribeSection() {
 
       <form className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 px-4">
         <div className="relative w-full z-0 sm:w-[380px]">
-          <div className="absolute -left-40 -top-24 opacity-10 sm:w-[349px] sm:h-[389px] sm:-left-[210px] sm:-top-[89px] z-[-1] pointer-events-none">
+          <div className="absolute -left-40 -top-24 opacity-10 w-[370px] h-[400px] sm:w-[298px] sm:h-[239px] sm:-left-[210px] sm:-top-[89px] z-[-1] pointer-events-none">
             <img src="/subscription-section/Group 42.png" alt="circles" />
           </div>
 
@@ -46,6 +47,6 @@ export default function SubscribeSection() {
       <div className="absolute right-0 top-0 w-24 h-20 sm:w-[234px] sm:h-[190px]">
         <img src="/subscription-section/Mask Group.png" alt="right-circles" />
       </div>
-    </section>
+    </Container>
   );
 }

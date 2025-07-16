@@ -1,12 +1,13 @@
 import Image from "next/image";
 import SectionHeading from "./common/SectionHeading";
 import BrandsSection from "./BrandsSection";
+import Container from "./common/Container";
 
 export default function TestimonialsSection() {
   return (
     <>
-      <section className="relative pt-16 sm:pt-20 px-4 sm:px-8 lg:px-20 xl:px-32 bg-white overflow-hidden">
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-[70px]">
+      <Container className="relative pt-16 sm:pt-20 max-w-[1230px] bg-white">
+        <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-full lg:w-1/2">
             <SectionHeading
               subTitle="TESTIMONIALS"
@@ -32,7 +33,7 @@ export default function TestimonialsSection() {
             </div>
           </div>
         </div>
-      </section>
+      </Container>
       <BrandsSection />
     </>
   );

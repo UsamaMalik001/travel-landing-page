@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className="z-50 w-full">
-      <Container className="flex items-center justify-between py-12">
+      <Container className="flex items-center justify-between py-12 max-w-[1200px]">
         <Link className="flex items-center" href="/">
           <Image
             src="/logo/Logo.png"

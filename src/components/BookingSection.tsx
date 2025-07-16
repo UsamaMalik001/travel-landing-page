@@ -74,6 +74,7 @@
 
 import Image from "next/image";
 import SectionHeading from "./common/SectionHeading";
+import Container from "./common/Container";
 
 const steps = [
   {
@@ -98,7 +99,7 @@ const steps = [
 
 export default function TripStepsSection() {
   return (
-    <section className="relative px-4 pb-16 pt-12 sm:px-8 lg:px-20 xl:px-32 bg-white overflow-hidden">
+    <Container className="relative px-4 pb-16 pt-12 max-w-[1214px] bg-white">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
         <div className="w-full lg:w-1/2">
           <SectionHeading
@@ -144,6 +145,6 @@ export default function TripStepsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 }

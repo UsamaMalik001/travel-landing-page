@@ -1,6 +1,9 @@
+import Image from "next/image";
+import Container from "./common/Container";
+
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#5E6282] pt-16 pb-6 px-4 sm:px-8 lg:px-20 xl:px-32">
+    <Container className="bg-white text-[#5E6282] pt-16 pb-6 max-w-[1200px]">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 lg:flex-row justify-between items-start">
         <div className="flex flex-col gap-4 max-w-xs text-center lg:text-left mx-auto lg:mx-0">
           <p className="text-3xl font-semibold text-[#181E4B]">Jadoo.</p>
@@ -106,6 +109,6 @@ export default function Footer() {
       <p className="text-center text-sm mt-12 text-[#5E6282]">
         All rights reserved @jadoo.co
       </p>
-    </footer>
+    </Container>
   );
 }
