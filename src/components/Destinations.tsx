@@ -76,7 +76,7 @@ export default function TravelCards() {
                 </span>
               </div>
             </div>
-            <div className="absolute bottom-[97px] right-[50px] sm:right-[32px] z-0 opacity-30">
+            <div className="absolute bottom-[97px] right-[50px] sm:right-[30px] z-0 opacity-30">
               <Image
                 src="/destinations-imgs/Decore (1).png"
                 alt="Decor"
